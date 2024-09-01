@@ -95,11 +95,11 @@ def main() -> None:
   application.add_handler(
       MessageHandler(filters.TEXT & ~filters.COMMAND, stylize))
 
+  print("Bayot si CJ")
+
   # Run the bot until the user presses Ctrl-C
   application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 
 if __name__ == "__main__":
   main()
-
-console.log("Bayot si CJ")
